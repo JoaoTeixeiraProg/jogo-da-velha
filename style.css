@@ -7,14 +7,42 @@
 body {
     height: 100vh;
     width: 100vw;
-    /*background: linear-gradient(90deg, rpg(), rpg())*/ /*Degrade*/
-    background-color: LightSteelBlue;
+    background-color: #b0c4de;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    color: black;
+    background-color: #606F7D;
+    align-items: center;
+}
+
+.heaber_button{
+    margin-left: 50px;
+    height: calc(100% - 10px);
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 5px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.heaber_button:hover{
+    background-color: #b0c4de;
+    color:black;
+    border: #b0c4de;
 }
 
 .container{
     display:grid;
     width: 100%;
-    height: 100%;
+    height: 90%;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -31,7 +59,6 @@ body {
 }
 
 
-/* Celulas */
 .box{
     width: 100px;
     height: 100px;
@@ -70,7 +97,6 @@ body {
     border-right: none;
 }
 
-/*x*/
 .box.x::before,
 .box.x::after,
 .container.x .box:not(.x):not(.circle):hover::after,
@@ -93,7 +119,6 @@ body {
     transform:rotate(-45deg);
 }
 
-/* Circulo */
 .box.circle::before,
 .box.circle::after,
 .container.circle .box:not(.x):not(.circle):hover::after,
@@ -106,7 +131,6 @@ body {
     border-radius: 50%;
 }
 
-/* Menssagem de Vitória*/
 .message{
     display:none;
     position: fixed;
